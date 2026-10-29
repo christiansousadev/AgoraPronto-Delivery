@@ -1,0 +1,49 @@
+# ==============================================================================
+# MODELO DE CONFIGURAÇÃO DE CREDENCIAIS - AGORAPRONTO DELIVERY
+# ==============================================================================
+# Este arquivo é um modelo seguro com placeholders.
+# NUNCA salve senhas de produção, chaves privadas ou tokens em arquivos rastreados pelo Git.
+# ==============================================================================
+
+[BANCO DE DADOS - MYSQL]
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=u730142489_agorapronto
+DB_USERNAME=seu_usuario_banco
+DB_PASSWORD=sua_senha_segura_aqui
+
+[CONTAS DE E-MAIL ADMINISTRATIVAS]
+EMAIL_SUPORTE=christiansousadev@gmail.com
+EMAIL_CONTATO=christiansousadev@gmail.com
+EMAIL_NOTIFICACOES=christiansousadev@gmail.com
+
+[GOOGLE CLOUD & MAPS PLATFORM]
+# Habilitar no Google Cloud Console:
+# - Places API
+# - Directions API
+# - Distance Matrix API
+# - Geocoding API
+# - Maps SDK for Android & iOS
+GOOGLE_MAPS_API_KEY=SUA_CHAVE_GOOGLE_MAPS_AQUI
+
+[GOOGLE RECAPTCHA V2 / V3]
+RECAPTCHA_SITE_KEY=sua_site_key_aqui
+RECAPTCHA_SECRET_KEY=sua_secret_key_aqui
+
+[FIREBASE CLOUD MESSAGING (FCM HTTP V1)]
+# Projeto Firebase: agorapronto-8116e
+# Baixar o arquivo JSON da conta de serviço no Console Firebase:
+# Configurações do Projeto -> Contas de Serviço -> Gerar Nova Chave Privada
+# Salvar em: painel-admin/storage/app/firebase/firebase_credentials.json
+FIREBASE_PROJECT_ID=agorapronto-8116e
+FIREBASE_MESSAGING_SENDER_ID=482881222701
+
+[ASSINATURA DE RELEASE ANDROID (KEYSTORE)]
+# Para gerar uma nova keystore:
+# keytool -genkey -v -keystore your-keystore-name.jks -keyalg RSA -keysize 2048 -validity 10000 -alias agorapronto
+KEY_ALIAS=agorapronto
+KEY_PASSWORD=sua_senha_da_chave
+STORE_PASSWORD=sua_senha_da_keystore
+STORE_FILE=caminho/para/your-keystore-name.jks
+
